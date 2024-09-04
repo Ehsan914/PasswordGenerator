@@ -1,0 +1,290 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter";
+  margin: 0;
+  background-color: #1c1c1c;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+main {
+  width: 770px;
+  height: 445px;
+  background-color: #1F2937;
+  padding: 60px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+h1, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+/*Header part*/
+.header {
+  padding-bottom: 45px;
+  border-bottom: 3px solid #273549;
+}
+
+.title {
+  font-family: "Poppins";
+  font-size: 40px;
+}
+
+.second {
+  color: #55F990;
+  position: relative;
+  top: -15px;
+}
+
+.description {
+  font-size: 20px;
+  color: white;
+  opacity: 0.8;
+}
+
+/*Password box part*/
+.body {
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+}
+
+.pb {
+  width: 377px;
+  height: 55px;
+  background-color: #273549;
+  border-radius: 5px;
+}
+
+.upper {
+  display: grid;
+  grid-template-areas: "first second" "thrid fourth";
+  gap: 15px;
+}
+
+.lower {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  font-family: "Poppins";
+}
+
+.genbtn {
+  display: flex;
+  background-color: #10B981;
+  padding: 12px 44px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in;
+  position: relative;
+}
+.genbtn p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.length {
+  font-size: 20px;
+  font-family: "Inter";
+}
+.length .counts {
+  font-family: "Poppins";
+  color: #55F990;
+}
+
+.genbtn::after {
+  content: "";
+  background-image: url(../assets/thunder.svg);
+  position: absolute;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 9px;
+  height: 100%;
+  top: 0;
+  left: 17px;
+}
+
+.slider {
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slider_line {
+  width: 290px;
+  height: 8px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+#counts {
+  color: #55F990;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+.pb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.pb input {
+  padding: 0;
+  border: 0;
+  text-align: center;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: "Arial";
+  color: #55F990;
+}
+
+.clipboard {
+  position: absolute;
+  top: 30%;
+  background-color: transparent;
+  right: 20px;
+}
+
+@media screen and (max-width: 950px) {
+  main {
+    width: 539px;
+    height: auto;
+    background-color: #1F2937;
+    padding: 60px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  /*Header part*/
+  .header {
+    padding-bottom: 32px;
+    border-bottom: 3px solid #273549;
+  }
+  .title {
+    font-family: "Poppins";
+    font-size: 35px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  /*Password box part*/
+  .body {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+  }
+  .pb {
+    width: 260px;
+    height: 55px;
+    background-color: #273549;
+    border-radius: 5px;
+  }
+  .upper {
+    display: grid;
+    grid-template-areas: "first second" "thrid fourth";
+    gap: 15px;
+  }
+  .btn {
+    font-family: "Poppins";
+  }
+  .genbtn {
+    display: flex;
+  }
+  .genbtn p {
+    font-size: 15px;
+  }
+  .length {
+    font-size: 15px;
+    font-family: "Inter";
+  }
+  .length .counts {
+    font-family: "Poppins";
+    color: #55F990;
+  }
+  .slider {
+    height: 47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .slider_line {
+    width: 260px;
+    height: 8px;
+    background-color: white;
+    border-radius: 7px;
+    position: relative;
+  }
+  .pb input {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 650px) {
+  main {
+    width: 280px;
+    height: auto;
+    padding: 40px 36px;
+    gap: 32px;
+  }
+  .header {
+    padding-bottom: 32px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .second {
+    top: 0;
+    padding-bottom: 10px;
+  }
+  .description {
+    font-size: 15px;
+  }
+  .pb {
+    width: 280px;
+    height: 40px;
+  }
+  .pb input {
+    font-size: 15px;
+  }
+  .body {
+    gap: 25px;
+  }
+  .upper {
+    display: grid;
+    grid-template-areas: "first" "second" "thrid" "fourth";
+    gap: 15px;
+  }
+  .lower {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .lower .slider_line {
+    width: 280px;
+  }
+  .lower .length {
+    font-size: 16px;
+  }
+  .lower .genbtn p {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=main.css.map */

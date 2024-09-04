@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="assets/fav-icon.svg">
+</head>
+<body>
+    <main>
+        <div class="header">
+            <h1 class="title">Generate a</h1>
+            <h1 class="title second">random password</h1>
+            <p class="description">Never use an insecure password again</p>
+        </div>
+        <div class="body">
+            <div class="upper">
+                <div class="pb">
+                    <div id="passbox1"></div>
+                    <a href="#" class="clipboard" onclick="copyToClipboard(1)">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_7_4)">
+                            <path d="M17.2083 4.08333H6.125C5.89294 4.08333 5.67038 4.17552 5.50628 4.33962C5.34219 4.50371 5.25 4.72627 5.25 4.95833V18.9583C5.25 19.1904 5.34219 19.413 5.50628 19.5771C5.67038 19.7411 5.89294 19.8333 6.125 19.8333H17.2083C17.4404 19.8333 17.663 19.7411 17.8271 19.5771C17.9911 19.413 18.0833 19.1904 18.0833 18.9583V4.95833C18.0833 4.72627 17.9911 4.50371 17.8271 4.33962C17.663 4.17552 17.4404 4.08333 17.2083 4.08333ZM16.9167 18.6667H6.41667V5.25H16.9167V18.6667Z" fill="white" fill-opacity="0.8"/>
+                            <path d="M15.1667 2.04167C15.1667 1.8096 15.0745 1.58704 14.9104 1.42295C14.7463 1.25885 14.5237 1.16667 14.2917 1.16667H3.20833C2.97627 1.16667 2.75371 1.25885 2.58961 1.42295C2.42552 1.58704 2.33333 1.8096 2.33333 2.04167V16.0417C2.33333 16.2737 2.42552 16.4963 2.58961 16.6604C2.75371 16.8245 2.97627 16.9167 3.20833 16.9167H3.5V2.33333H15.1667V2.04167Z" fill="white" fill-opacity="0.8"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_7_4">
+                            <rect width="21" height="21" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>    
+                </div>
+                <div class="pb">
+                    <div id="passbox2"></div>
+                    <a href="#"  class="clipboard" onclick="copyToClipboard(2)">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_7_4)">
+                            <path d="M17.2083 4.08333H6.125C5.89294 4.08333 5.67038 4.17552 5.50628 4.33962C5.34219 4.50371 5.25 4.72627 5.25 4.95833V18.9583C5.25 19.1904 5.34219 19.413 5.50628 19.5771C5.67038 19.7411 5.89294 19.8333 6.125 19.8333H17.2083C17.4404 19.8333 17.663 19.7411 17.8271 19.5771C17.9911 19.413 18.0833 19.1904 18.0833 18.9583V4.95833C18.0833 4.72627 17.9911 4.50371 17.8271 4.33962C17.663 4.17552 17.4404 4.08333 17.2083 4.08333ZM16.9167 18.6667H6.41667V5.25H16.9167V18.6667Z" fill="white" fill-opacity="0.8"/>
+                            <path d="M15.1667 2.04167C15.1667 1.8096 15.0745 1.58704 14.9104 1.42295C14.7463 1.25885 14.5237 1.16667 14.2917 1.16667H3.20833C2.97627 1.16667 2.75371 1.25885 2.58961 1.42295C2.42552 1.58704 2.33333 1.8096 2.33333 2.04167V16.0417C2.33333 16.2737 2.42552 16.4963 2.58961 16.6604C2.75371 16.8245 2.97627 16.9167 3.20833 16.9167H3.5V2.33333H15.1667V2.04167Z" fill="white" fill-opacity="0.8"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_7_4">
+                            <rect width="21" height="21" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <div class="pb">
+                    <div id="passbox3"></div>
+                    <a href="#" class="clipboard" onclick="copyToClipboard(3)">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_7_4)">
+                            <path d="M17.2083 4.08333H6.125C5.89294 4.08333 5.67038 4.17552 5.50628 4.33962C5.34219 4.50371 5.25 4.72627 5.25 4.95833V18.9583C5.25 19.1904 5.34219 19.413 5.50628 19.5771C5.67038 19.7411 5.89294 19.8333 6.125 19.8333H17.2083C17.4404 19.8333 17.663 19.7411 17.8271 19.5771C17.9911 19.413 18.0833 19.1904 18.0833 18.9583V4.95833C18.0833 4.72627 17.9911 4.50371 17.8271 4.33962C17.663 4.17552 17.4404 4.08333 17.2083 4.08333ZM16.9167 18.6667H6.41667V5.25H16.9167V18.6667Z" fill="white" fill-opacity="0.8"/>
+                            <path d="M15.1667 2.04167C15.1667 1.8096 15.0745 1.58704 14.9104 1.42295C14.7463 1.25885 14.5237 1.16667 14.2917 1.16667H3.20833C2.97627 1.16667 2.75371 1.25885 2.58961 1.42295C2.42552 1.58704 2.33333 1.8096 2.33333 2.04167V16.0417C2.33333 16.2737 2.42552 16.4963 2.58961 16.6604C2.75371 16.8245 2.97627 16.9167 3.20833 16.9167H3.5V2.33333H15.1667V2.04167Z" fill="white" fill-opacity="0.8"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_7_4">
+                            <rect width="21" height="21" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <div class="pb">
+                    <div id="passbox4"></div>
+                    <a href="#"  class="clipboard" onclick="copyToClipboard(4)">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_7_4)">
+                            <path d="M17.2083 4.08333H6.125C5.89294 4.08333 5.67038 4.17552 5.50628 4.33962C5.34219 4.50371 5.25 4.72627 5.25 4.95833V18.9583C5.25 19.1904 5.34219 19.413 5.50628 19.5771C5.67038 19.7411 5.89294 19.8333 6.125 19.8333H17.2083C17.4404 19.8333 17.663 19.7411 17.8271 19.5771C17.9911 19.413 18.0833 19.1904 18.0833 18.9583V4.95833C18.0833 4.72627 17.9911 4.50371 17.8271 4.33962C17.663 4.17552 17.4404 4.08333 17.2083 4.08333ZM16.9167 18.6667H6.41667V5.25H16.9167V18.6667Z" fill="white" fill-opacity="0.8"/>
+                            <path d="M15.1667 2.04167C15.1667 1.8096 15.0745 1.58704 14.9104 1.42295C14.7463 1.25885 14.5237 1.16667 14.2917 1.16667H3.20833C2.97627 1.16667 2.75371 1.25885 2.58961 1.42295C2.42552 1.58704 2.33333 1.8096 2.33333 2.04167V16.0417C2.33333 16.2737 2.42552 16.4963 2.58961 16.6604C2.75371 16.8245 2.97627 16.9167 3.20833 16.9167H3.5V2.33333H15.1667V2.04167Z" fill="white" fill-opacity="0.8"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_7_4">
+                            <rect width="21" height="21" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="lower">
+                <div class="slider">
+                    <p class="length">Length: <span ><label for="sliderNum" id="counts">8</label></span></p>
+                    <input type="range" min="8" max="12" value="8" class="slider_line" id="sliderNum">
+                </div>
+                <div class="btn">
+                    <a href="#" class="genbtn"><p>Generate password</p></a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="js/main.js"></script>
+</html>
