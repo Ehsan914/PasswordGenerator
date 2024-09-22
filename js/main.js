@@ -14,6 +14,8 @@ const clipboard = `<a href="#" class="clipboard">
                     </a>`
 const len = char.length;
 const generate = document.querySelector(".genbtn");
+const copiedMsg = document.querySelector('.copied');
+
 
 const slider = document.querySelector("#sliderNum");
 const counts = document.querySelector("#counts");
@@ -51,7 +53,10 @@ generate.addEventListener('click', getThePass);
 function copyToClipboard(index) {
     const copyText = document.getElementById(index).value;
     navigator.clipboard.writeText(copyText).then(() => {
-        alert("Copied to clipboard");
+        copiedMsg.style.opacity = 1;
+        setTimeout(function() {
+            copiedMsg.style.opacity = 0;
+        }, 1000)
     });
 }
 

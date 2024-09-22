@@ -21,6 +21,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 45px;
+    position: relative;
 }
 
 h1, p {
@@ -260,6 +261,20 @@ a {
             font-size: calc(20px * .7);
         }
     }
+}
+
+.copied {
+    position: absolute;
+    background-color: aliceblue;
+    color: #1c1c1c;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: opacity 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
 }
 
 @media screen and (max-width: 650px){
